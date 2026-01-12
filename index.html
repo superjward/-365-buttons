@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$365BUTTONS - The 2026 Meme Coin Revolution</title>
+  
+  <!-- Tailwind CSS for easy stylish design (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Animate.css for moving fonts/animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+  <!-- Google Fonts for fun, stylish text -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Bungee+Shade&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(135deg, #1a1a1a, #4a0e4a, #0e4a4a); /* Flashy gradient */
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+    h1, h2 { font-family: 'Bungee Shade', cursive; } /* Arcade meme font */
+    .button { transition: transform 0.3s; }
+    .button:hover { transform: scale(1.1); } /* Zoom on hover */
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-8 relative">
+
+  <!-- Background Particles (raining buttons) -->
+  <div id="tsparticles" class="absolute inset-0 z-0"></div>
+  
+  <!-- Hero Section -->
+  <header class="text-center mb-12 z-10">
+    <h1 class="text-6xl md:text-8xl text-green-400 animate__animated animate__bounce animate__infinite animate__slow">
+      🚀 $365BUTTONS 🚀
+    </h1>
+    <p class="text-2xl md:text-4xl text-yellow-300 mt-4 animate__animated animate__fadeIn animate__delay-1s">
+      One Button Per Day. No Explanations. Just Moon Vibes 🌕
+    </p>
+    
+    <!-- Your Jar Image (flashy with shadow & border) -->
+    <img 
+      src="buttons-jar.jpg"  <!-- Change to your uploaded file name -->
+      alt="365 Buttons Jar - Colorful buttons spilling out"
+      class="mx-auto mt-8 w-full max-w-md rounded-3xl shadow-2xl border-4 border-green-500 animate__animated animate__zoomIn animate__delay-2s"
+    >
+  </header>
+
+  <!-- Tamara's Quotes Section (stylish, animated) -->
+  <section class="max-w-4xl mx-auto text-center mb-12 z-10 bg-black bg-opacity-50 p-8 rounded-2xl shadow-lg">
+    <h2 class="text-4xl text-purple-400 mb-6 animate__animated animate__heartBeat animate__infinite animate__slow">
+      Inspired by Tamara's Epic Words 🔥
+    </h2>
+    <div class="space-y-6 text-lg md:text-xl italic text-white">
+      <p class="animate__animated animate__fadeInLeft animate__delay-3s">
+        “I’m getting 365 buttons, one for each day, because I want to do more stuff and I’m scared of time, so I want to be more conscious of it.” 
+        <span class="text-green-300">— Tamara (@flylikeadove)</span>
+      </p>
+      <p class="animate__animated animate__fadeInRight animate__delay-4s">
+        “Just to have to see how quick days pass and to remind myself that time passes and I just have fun and to do a lot of stuff.”
+        <span class="text-green-300">— Tamara</span>
+      </p>
+      <p class="animate__animated animate__fadeInLeft animate__delay-5s">
+        “Hey so it actually only has to make sense to me for me to do it and I don’t feel like explaining it to anyone else.”
+        <span class="text-green-300">— The Iconic Line</span>
+      </p>
+    </div>
+    <p class="mt-6 text-yellow-300 animate__animated animate__rubberBand animate__delay-6s">
+      No utility needed. Just press the button and vibe! 😏 #365Buttons #TamaraMeme
+    </p>
+  </section>
+
+  <!-- Social Links Section (bongga buttons) -->
+  <section class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 mb-12 z-10">
+    <a href="https://t.me/yourtelegramgroup" target="_blank" class="button bg-blue-600 hover:bg-blue-800 text-white font-bold py-4 px-8 rounded-full shadow-lg animate__animated animate__jackInTheBox animate__delay-7s">
+      Join Telegram 🔵
+    </a>
+    <a href="https://x.com/Web3Yato" target="_blank" class="button bg-black hover:bg-gray-800 text-white font-bold py-4 px-8 rounded-full shadow-lg animate__animated animate__jackInTheBox animate__delay-7s">
+      Follow on X 🐦
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-400 mt-auto z-10">
+    © 2026 $365BUTTONS | Powered by Pure Meme Energy | Made by @Web3Yato in PH 🇵🇭
+  </footer>
+
+  <!-- tsParticles Script for Raining Buttons -->
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: true, zIndex: -1 },
+      particles: {
+        number: { value: 50 },
+        color: { value: ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"] }, // Colorful buttons
+        shape: { type: "circle" }, // Button shapes (change to "star" for fun)
+        opacity: { value: 0.9 },
+        size: { value: { min: 5, max: 15 } },
+        move: { enable: true, speed: 2, direction: "bottom", straight: true, outModes: "out" }
+      },
+      interactivity: { events: { onHover: { enable: true, mode: "attract" } } },
+      detectRetina: true
+    });
+  </script>
+
+</body>
+</html>
